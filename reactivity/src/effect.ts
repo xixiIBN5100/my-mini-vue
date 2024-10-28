@@ -110,7 +110,7 @@ export function trigger (target,type,key) {
     effectTrigger(createDep(effects))
 }
 
-function effectTrigger ( effects)  {
+export function effectTrigger ( effects)  {
     for(const effect of effects) {
         if(effect.scheduler) {
             effect.scheduler()
