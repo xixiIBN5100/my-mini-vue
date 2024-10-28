@@ -3,10 +3,10 @@ import { createDep } from "./dep";
 import { reactive } from "./reactive";
 
 export class refImp {
-    public _rawValue = undefined
-    public _value = undefined
+    private _rawValue: any;
+    private _value: any;
     public dep;
-    public _is_ref = true
+    public __v_isRef = true;
 
     constructor(value) {
         this._rawValue = value
