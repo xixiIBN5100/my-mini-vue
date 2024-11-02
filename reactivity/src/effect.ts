@@ -102,7 +102,7 @@ export function trigger (target,type,key) {
 
     const dep = depsMap.get(key)
     deps.push(dep)
-    const effects = []
+    const effects: any[] = []
     deps.forEach( dep => {
         effects.push(...dep)
     })

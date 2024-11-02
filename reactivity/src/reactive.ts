@@ -1,3 +1,8 @@
+import {
+    mutableHandlers,
+    readonlyHandlers,
+    shallowReadonlyHandlers,
+} from "./baseHandlers";
 
 
 export const reactiveMap = new WeakMap()
